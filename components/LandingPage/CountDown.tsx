@@ -19,7 +19,7 @@ const CountDown: React.FC = () => {
     });
 
     // Set your target date here
-    const targetDate = new Date('2025-02-28T23:59:59').getTime(); // Fixed February date
+    const targetDate = new Date('2025-02-01T00:00:00').getTime(); // Fixed February date
 
     useEffect(() => {
         const calculateTimeLeft = () => {

@@ -31,7 +31,7 @@ const Hero = () => {
 
     return (
         <motion.section
-            className="relative bg-[url('/Images/Group.png')] bg-cover bg-center bg-no-repeat py-16 md:pt-8 pb-10 px-4 overflow-hidden"
+            className="relative bg-[url('/Images/Group.png')] bg-cover bg-center bg-no-repeat py-16 md:pt-7 pb-10 px-4 overflow-hidden"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -41,11 +41,11 @@ const Hero = () => {
                 variants={staggerContainer}
             >
                 <motion.div className="flex gap-4 mb-2" variants={fadeInUp}>
-                    <Image src={"/Images/clg-logo1.png"} width={60} height={60} alt="logo1" />
-                    <Image src={"/Images/clg-logo2.png"} width={75} height={75} alt="logo1" />
+                    <Image src={"/Images/clg-logo3.jpeg"} width={90} height={90} alt="logo1" />
+                    {/* <Image src={"/Images/clg-logo2.png"} width={75} height={75} alt="logo1" /> */}
                 </motion.div>
                 <motion.h1
-                    className="text-4xl mt-3 font-lost-south tracking-widest"
+                    className="text-4xl mt-1 font-lost-south tracking-widest"
                     variants={fadeInUp}
                 >
                     BHAgwan mahavir college of management

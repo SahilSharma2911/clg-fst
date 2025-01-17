@@ -31,7 +31,9 @@ const SubHero = () => {
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                     <Link
                         className="md:z-0 hover:scale-105 transition-all duration-500 font-semibold bg-white border-2 border-[#F9C63D] px-24 rounded-full text-[#636363] [box-shadow:_4px_2px_2px_rgb(0_0_0)] py-2.5"
-                        href="/"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSetmhYdL0zCYsjANSaXsQbh10xSf-1UfX0i2Hlx25D73LEajg/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Register
                     </Link>

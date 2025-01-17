@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Activity = () => {
     // Array of activity data
@@ -51,17 +52,23 @@ const Activity = () => {
                 {activities.map((activity, index) => (
                     <motion.div
                         key={activity.id}
-                        className="p-2 bg-[#F1473A] w-full md:w-[40%] lg:w-[30%] xl:w-[23%] border-2 border-black rounded-lg [box-shadow:_3px_2px_2px_rgb(0_0_0)] hover:[box-shadow:_5px_4px_3px_rgb(0_0_0)] transition-all duration-300"
+                        className="p-2 bg-[#F1473A] w-[45%] md:w-[40%] lg:w-[30%] xl:w-[23%] border-2 border-black rounded-lg [box-shadow:_3px_2px_2px_rgb(0_0_0)] hover:[box-shadow:_5px_4px_3px_rgb(0_0_0)] transition-all duration-300"
                         variants={cardVariants}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
                         custom={index}
                     >
-                        <Image src={activity.image} width={500} height={500} alt={activity.name} />
-                        <p className="text-white text-2xl md:text-3xl font-semibold mt-3 uppercase font-lost-south tracking-widest">
-                            {activity.name}
-                        </p>
+                        <Link
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSetmhYdL0zCYsjANSaXsQbh10xSf-1UfX0i2Hlx25D73LEajg/viewform"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image src={activity.image} width={500} height={500} alt={activity.name} />
+                            <p className="text-white text-xl md:text-3xl font-semibold mt-3 uppercase font-lost-south tracking-widest">
+                                {activity.name}
+                            </p>
+                        </Link>
                     </motion.div>
                 ))}
             </div>

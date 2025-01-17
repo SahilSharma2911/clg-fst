@@ -61,7 +61,7 @@ const LastSection = () => {
       {/* Images Section */}
       <motion.div
         variants={staggerContainer}
-        className="flex flex-col md:flex-row gap-8 mt-12 md:mt-14"
+        className="hidden lg:flex flex-col md:flex-row gap-8 mt-12 md:mt-14"
       >
         <motion.div
           variants={fadeInUp}
@@ -95,6 +95,54 @@ const LastSection = () => {
         >
           <Image
             src={"/other.jpeg"}
+            alt="image"
+            width={500}
+            height={500}
+            className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105 cursor-pointer"
+          />
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        variants={staggerContainer}
+        className="flex lg:hidden flex-wrap justify-center mt-8 md:mt-10"
+      >
+        {/* First row on mobile (2 images) */}
+        <div className="flex flex-wrap justify-center gap-4 w-full">
+          <motion.div
+            variants={fadeInUp}
+            className="w-[45%] md:w-1/3 h-[280px] md:h-[400px] border-2 md:border-4 border-black rounded-full overflow-hidden box-border [box-shadow:_-2px_1px_1px_rgb(0_0_0)]"
+          >
+            <Image
+              src="/Images/bmu.jpeg"
+              alt="image"
+              width={500}
+              height={500}
+              className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105 cursor-pointer"
+            />
+          </motion.div>
+
+          <motion.div
+            variants={fadeInUp}
+            className="w-[45%] md:w-1/3 h-[280px] md:h-[400px] border-2 md:border-4 border-black rounded-full overflow-hidden box-border"
+          >
+            <Image
+              src="/member.jpeg"
+              alt="image"
+              width={500}
+              height={500}
+              className="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105 cursor-pointer"
+            />
+          </motion.div>
+        </div>
+
+        {/* Second row on mobile (1 centered image) */}
+        <motion.div
+          variants={fadeInUp}
+          className="w-[45%] md:w-1/3 h-[280px] md:h-[400px] border-2 md:border-4 border-black rounded-full overflow-hidden box-border [box-shadow:_2px_1px_1px_rgb(0_0_0)]"
+        >
+          <Image
+            src="/other.jpeg"
             alt="image"
             width={500}
             height={500}

@@ -9,7 +9,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const controlNavbar = () => {
-            if (window.scrollY > 200) {
+            if (window.scrollY > 100) {
                 setShow(true);
             } else {
                 setShow(false);
@@ -39,7 +39,9 @@ const Navbar = () => {
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <Link
                                 className="md:z-0 hover:scale-105 transition-all duration-500 font-semibold text-black bg-[#FFD200] border-2 border-black px-5 md:px-16 shadow-md [box-shadow:_2px_2px_2px_rgb(0_0_0)] rounded-full py-2.5"
-                                href="/"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSetmhYdL0zCYsjANSaXsQbh10xSf-1UfX0i2Hlx25D73LEajg/viewform"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Register
                             </Link>
