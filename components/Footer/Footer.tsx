@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         {/* last section  */}
-        <div className=" flex flex-col items-center mt-6 lg:mt-0 mb-12 lg:mb-0">
+        <div className=" flex flex-col items-center mt-6 lg:mt-0 mb-16 lg:mb-0">
           <h3 className=" font-lost-south text-3xl md:text-4xl tracking-wide font-normal mb-1 lg:mb-7">
             presented by
           </h3>
