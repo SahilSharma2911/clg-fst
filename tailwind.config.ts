@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         racing: ["Racing Sans One", "serif"],
+        "lost-south": ["var(--font-lost-in-south)"],
       },
     },
   },
