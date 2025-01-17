@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+        racing: ["Racing Sans One", "serif"],
+      },
     },
   },
   plugins: [],
