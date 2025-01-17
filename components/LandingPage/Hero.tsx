@@ -31,7 +31,7 @@ const Hero = () => {
 
     return (
         <motion.section
-            className="relative bg-[url('/Images/Group.png')] bg-cover bg-center bg-no-repeat pt-8 pb-10 px-4 overflow-hidden"
+            className="relative bg-[url('/Images/Group.png')] bg-cover bg-center bg-no-repeat py-16 md:pt-8 pb-10 px-4 overflow-hidden"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
