@@ -1,7 +1,7 @@
-"use client"
-import Image from 'next/image';
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Activity = () => {
     // Array of activity data
@@ -27,16 +27,31 @@ const Activity = () => {
         }),
     };
 
+    const headingVariants = {
+        hidden: { opacity: 0, y: -30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" },
+        },
+    };
+
     return (
         <section className="w-11/12 mx-auto flex items-center justify-center flex-col py-10">
-            <h2 className="font-Montserrat text-4xl md:text-7xl font-black text-[#F9C63D] text-center [text-shadow:_10px_5px_2px_rgb(0_0_0)] [-webkit-text-stroke:_1px_black]">
+            <motion.h2
+                className="font-Montserrat text-5xl md:text-7xl font-black text-[#F9C63D] text-center [text-shadow:_10px_5px_2px_rgb(0_0_0)] [-webkit-text-stroke:_1px_black]"
+                variants={headingVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.8 }}
+            >
                 MORE THAN 9 ENGAGING ACTIVITIES
-            </h2>
+            </motion.h2>
             <div className="flex-wrap flex gap-5 mt-10 text-center w-full items-center justify-center">
                 {activities.map((activity, index) => (
                     <motion.div
                         key={activity.id}
-                        className="p-2 bg-[#F1473A] w-full md:w-[40%] lg:w-[30%] xl:w-[23%] border-2 border-black rounded-lg [box-shadow:_3px_2px_2px_rgb(0_0_0)] transition-transform duration-300"
+                        className="p-2 bg-[#F1473A] w-full md:w-[40%] lg:w-[30%] xl:w-[23%] border-2 border-black rounded-lg [box-shadow:_3px_2px_2px_rgb(0_0_0)] hover:[box-shadow:_5px_4px_3px_rgb(0_0_0)] transition-all duration-300"
                         variants={cardVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -44,7 +59,7 @@ const Activity = () => {
                         custom={index}
                     >
                         <Image src={activity.image} width={500} height={500} alt={activity.name} />
-                        <p className="text-white text-xl md:text-2xl font-semibold mt-3 uppercase font-lost-south tracking-widest">
+                        <p className="text-white text-2xl md:text-3xl font-semibold mt-3 uppercase font-lost-south tracking-widest">
                             {activity.name}
                         </p>
                     </motion.div>

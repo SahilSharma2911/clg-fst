@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#FFD200] py-6 border-t-8 border-black mt-16">
+    <div className=" bg-[#FFD200] py-6 border-t-4 border-black mt-16">
       <div className=" w-11/12 mx-auto flex items-center justify-between">
         {/* logo section  */}
         <div className=" md:w-[250px]  md:h-[250px] size-40">

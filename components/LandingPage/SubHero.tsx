@@ -30,15 +30,15 @@ const SubHero = () => {
             >
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                     <Link
-                        className="md:z-0 hover:scale-105 transition-all duration-500 font-semibold bg-white border border-[#F9C63D] px-24 shadow-md shadow-gray-500 rounded-full text-[#636363] py-2"
-                        href="/sign-up"
+                        className="md:z-0 hover:scale-105 transition-all duration-500 font-semibold bg-white border-2 border-[#F9C63D] px-24 rounded-full text-[#636363] [box-shadow:_4px_2px_2px_rgb(0_0_0)] py-2.5"
+                        href="/"
                     >
                         Register
                     </Link>
                 </motion.div>
             </motion.div>
             <motion.p
-                className="font-Montserrat text-xl md:text-2xl mt-7 md:mt-4"
+                className="font-Montserrat text-xl md:text-2xl mt-7 "
                 variants={fadeIn}
                 transition={{ delay: 0.3 }}
             >
