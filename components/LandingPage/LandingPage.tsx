@@ -4,6 +4,7 @@ import CountDown from './CountDown'
 import Activity from './Activity'
 import Partner from './Partner'
 import SubHero from './SubHero'
+import LastSection from './LastSection'
 
 const LandingPage = () => {
     return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
             <CountDown />
             <Activity />
             <Partner />
+            <LastSection/>
         </main>
     )
 }
